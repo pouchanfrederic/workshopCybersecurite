@@ -146,6 +146,7 @@ section nav img#logo-paypal {
 a.button:hover, a.button:link:hover, a.button:visited:hover, .button:hover {
     background-color: #005ea6;
     outline: 0;
+    border-radius: 25px;
 }
 a.button, a.button:link, a.button:visited, .button {
     width: 100%;
@@ -153,14 +154,14 @@ a.button, a.button:link, a.button:visited, .button {
     padding: 0;
     border: 0;
     display: block;
+    border-radius: 25px;
     background-color: #0070ba;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -khtml-border-radius: 25px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -198,27 +199,49 @@ a.button, a.button:link, a.button:visited, .button {
 .forgotLink {
     margin: 20px auto;
     padding-bottom: 20px;
-    border-bottom: 1px solid #cbd2d6;
+    /* border-bottom: 1px solid #cbd2d6; */
     text-align: center;
 }
 
 a.button.secondary, a.button.secondary:link, a.button.secondary:visited, .button.secondary {
     background-color: #E1E7EB;
     color: #2C2E2F;
+    border-radius: 25px;
 }
 a.button, a.button:link, a.button:visited {
     padding-top: 11px;
+    border-radius: 25px;
 }
 
 a, a:link, a:visited {
     color: #0070ba;
     font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
+    border-radius: 25px;
     text-decoration: none;
     -webkit-transition: color .2s ease-out;
     -moz-transition: color .2s ease-out;
     -o-transition: color .2s ease-out;
     transition: color .2s ease-out;
+}
+
+font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loginSeparator {
+    border-top: 1px solid #cbd2d6;
+    position: relative;
+    margin: 12px 0 12px;
+    text-align: center;
+}
+
+.loginSeparator .loginSpanSeparator {
+    background-color: #fff;
+    padding: 0 .5em;
+    position: relative;
+    color: #6c7378;
+    top: -.7em;
 }
 
 /* ----------------------- Page de monitoring ------------------------- */
@@ -228,4 +251,21 @@ a, a:link, a:visited {
     flex-direction: rom;
     margin-bottom: 2em;
     margin-right: 5em;
+}
+
+.padding{
+    padding:10px;
+}
+
+.justify{
+    text-justify: inter-word;
+    padding:10px;
+}
+
+.characterLimit{
+    /* text-overflow: ellipsis;  */
+    width: 600px; 
+    text-justify: inter-word;
+    /* white-space: nowrap; */
+    overflow-wrap: break-word;  
 }
