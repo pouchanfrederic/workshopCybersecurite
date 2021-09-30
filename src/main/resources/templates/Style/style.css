@@ -246,20 +246,36 @@ font{
 
 /* ----------------------- Page de monitoring ------------------------- */
 
-#data-container{
+.tesmort{
+    width: 100%;
     display: flex;
-    flex-direction: rom;
-    margin-bottom: 2em;
-    margin-right: 5em;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.imgCenter{
+    padding: 2em;
 }
 
 .padding{
     padding:10px;
 }
 
+.textCenter{
+    width: 500px;
+}
+
 .justify{
     text-justify: inter-word;
-    padding:10px;
 }
 
 .characterLimit{
