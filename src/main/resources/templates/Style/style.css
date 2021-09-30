@@ -18,7 +18,7 @@ section nav img#logo-paypal {
     cursor: pointer;
 }
 
-#navbar{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,6 +126,11 @@ section nav img#logo-paypal {
     font-family: Helvetica,Arial,sans-serif;
     font-weight: 400;
     direction: ltr;
+}
+
+.paypal-logo{
+    display: flex;
+    justify-content: center;
 }
 .textInput {
     position: relative;
@@ -246,7 +251,39 @@ font{
 
 /* ----------------------- Page de monitoring ------------------------- */
 
-.tesmort{
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.menuLink ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menuLink li {
+    list-style: none;
+}
+
+.menuLink li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuLink li:hover {
+    background-color: #555;
+    border-radius: 8px;
+}
+
+.zoneText{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -262,16 +299,18 @@ font{
     align-content: center;
 }
 
+.textCenter{
+    width: 70%;
+}
+
 .imgCenter{
+    display: flex;
+    justify-content: center;
     padding: 2em;
 }
 
 .padding{
     padding:10px;
-}
-
-.textCenter{
-    width: 500px;
 }
 
 .justify{
@@ -284,4 +323,29 @@ font{
     text-justify: inter-word;
     /* white-space: nowrap; */
     overflow-wrap: break-word;  
+}
+
+/*------------------ Alert Pop Up --------------*/
+
+.alert {
+    display: none;
+    width: 40%;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closeBtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closeBtn:hover {
+    color: black;
 }

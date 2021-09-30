@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="paypal.png"/>
-    <title>Se connecter à Paypal</title>
-	<head>
-		<section id="section-navbar">
-			<nav id="navbar">
+    <link rel="icon" type="image/svg" href="warning.svg"/>
+	<link href="Style/style.css" rel="stylesheet">
+	<title>Vigilence Constante</title>
+	<script type="text/javascript">
+		setTimeout(PopUp,10000);
+		function PopUp(){
+			const alert = document.getElementById("popUp");
+			alert.style.display = "block";
+		}
+	</script>
+</head>
+
+<body >
+	<header>
+		<section >
+			<nav class="menu">
 				<a routerLink="home">
-			<!-- <img id="logo-paypal" src="logo-paypal.png"> -->
-		  </a>
-				<div class="navbar-links">
+				</a>
+				<div class="menuLink">
 					<ul>
 						<li><a href="dashboard">Tableau de bord</a></li>
 					</ul>
 				</div>
 			</nav>
-		  </section>
-	</head>
-
-  <link href="Style/style.css" rel="stylesheet">
-</head>
-
-<body >
+		</section>
+	</header>
 	<section>
-		<div align="center" class="imgCenter">
+		<div class="imgCenter">
 			<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="red" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
 				<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
 			</svg>
@@ -37,25 +42,31 @@
 	<section id="monitoring-section">
 		<h2 align="center">Vous vous êtes fait avoir !</h2>
 	</section>
-	<div class="tesmort">
-	<section class="data-container textCenter">
-        <p>En effet, en cliquant sur ce lien et en entrant vos informations confidentielles,
-            vous nous avez donné la possibilité de vous nuire.
-		</p>
-        <p >Heureusement pour vous, nous avons réalisé ce site
-			pour faire de la mise en garde, et pour sensibiliser le plus de personnes possible.
-		</p>
-		<p>À ce titre, aucune de vos informations ne seront transmises, vendues, ou conservées.
-			Nous vous invitons néanmoins à faire plus attention la prochaine fois où vous lirez vos mails.
-		</p>
-		<p>Plusieurs indices comme l'expéditeur, la présentation ou encore l'URL du lien peuvent vous mettre
-			la puce à l'oreille et dévoiler les intentions cachées derrière un simple mail.
-		</p>
-		<p>Ne cliquez pas sur les liens des emails, prenez l'habitude de vous rendre sur le site en passant le cherchant directement sur votre navigateur.
-		</p>
-		<p>Pour plus d'informations sur les emails frauduleux PayPal : cliquez sur ce <a href="https://www.paypal.com/fr/webapps/mpp/phishing">lien</a>.
-		</p>
-	</section>
-		</div>
+	<div class="zoneText">
+		<section class="data-container textCenter">
+			<p>En effet, en cliquant sur ce lien et en entrant vos informations confidentielles,
+				vous nous avez donné la possibilité de vous nuire.
+			</p>
+			<p >Heureusement pour vous, nous avons réalisé ce site
+				pour faire de la mise en garde, et pour sensibiliser le plus de personnes possible.
+			</p>
+			<p>À ce titre, aucune de vos informations ne seront transmises, vendues, ou conservées.
+				Nous vous invitons néanmoins à faire plus attention la prochaine fois où vous lirez vos mails.
+			</p>
+			<p>Plusieurs indices comme l'expéditeur, la présentation ou encore l'URL du lien peuvent vous mettre
+				la puce à l'oreille et dévoiler les intentions cachées derrière un simple mail.
+			</p>
+			<p>Ne cliquez pas sur les liens des emails, prenez l'habitude de vous rendre sur le site en passant le cherchant directement sur votre navigateur.
+			</p>
+			<p>Pour plus d'informations sur les emails frauduleux PayPal : cliquez sur ce <a href="https://www.paypal.com/fr/webapps/mpp/phishing">lien</a>.
+			</p>
+		</section>
+	</div>
+	<!-- modal
+	<div id="popUp" class="alert">
+		<span class="closeBtn" onclick="this.parentElement.style.display='none';">&times;</span>
+		<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+	</div>
+	-->
 </body>
 </html>
